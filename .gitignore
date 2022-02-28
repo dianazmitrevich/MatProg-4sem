@@ -1,12 +1,3 @@
-.vs
-bin/
-obj/
-Properties/
-*.config
-*.csproj
-*.sln
-*.csproj.user
-
 *.pptx
 *.jpg
 *.png
