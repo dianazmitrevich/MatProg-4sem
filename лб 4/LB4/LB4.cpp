@@ -8,6 +8,7 @@
 using namespace std;
 void Task1();
 void Task2();
+void Task3();
 void Task5();
 
 void main()
@@ -16,7 +17,9 @@ void main()
 
 	Task1();
 	cout << "-----------------\n\n\n";
-	//Task2();
+	// Task2();
+	cout << "-----------------\n\n\n";
+	Task3();
 	cout << "-----------------\n\n\n";
 	Task5();
 }
@@ -48,6 +51,14 @@ void Task2()
 			<< "        " << std::left << std::setw(10) << ((double)(t2 - t1)) / ((double)CLOCKS_PER_SEC)
 			<< "   " << std::setw(10) << ((double)(t4 - t3)) / ((double)CLOCKS_PER_SEC) << std::endl;
 	}
+}
+
+void Task3()
+{
+	char x[] = "кол", y[] = "столб";
+	int  lx = sizeof(x) - 1, ly = sizeof(y) - 1;
+	int l = levenshtein_r(lx, x, ly, y);
+	cout << "Результат = " << l << endl << endl;
 }
 
 void Task5()
